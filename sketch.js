@@ -6,7 +6,7 @@ var off = [];
 
 function setup() 
 {
-  createCanvas(800, 800, WEBGL);
+  createCanvas(1200, 800, WEBGL);
   smooth();
   strokeWeight(2);
   refresh();
@@ -25,7 +25,7 @@ function refresh()
 function draw() 
 {
  
-  background(50);
+  //background(50);
   rotateX(millis() / 1000);
   
   // update superformula parameters
@@ -37,10 +37,10 @@ function draw()
   var n3 = map( sin(w[5]*frameCount + off[5]), -1, 1, -10, 10);
  
   // fade background
-  //alph = lerp(alph, 30, 0.01);
-  //fill(0, alph);
-  //noStroke();
-  //rect(0, 0, width, height);
+  alph = lerp(alph, 30, 0.01);
+  fill(0, alph);
+  noStroke();
+  rect(0, 0, width, height);
  
   // rotate screen
   translate(width/2, height/2);
