@@ -6,7 +6,7 @@ var off = [];
 
 function setup() 
 {
-  createCanvas(1200, 800);
+  createCanvas(1600, 900);
   smooth();
   strokeWeight(2);
   refresh();
@@ -31,7 +31,7 @@ function draw()
   // update superformula parameters
   var a  = map( sin(w[0]*frameCount + off[0]), -1, 1, -1, 1);
   var b  = map( sin(w[1]*frameCount + off[1]), -1, 1, -1, 1); 
-  var m  = map( sin(w[2]*frameCount + off[2]), -1, 1, -2, 5);
+  var m  = map( sin(w[2]*frameCount + off[2]), -1, 1, -20, 50);
   var n1 = map( sin(w[3]*frameCount + off[3]), -1, 1,  5, 10);
   var n2 = map( sin(w[4]*frameCount + off[4]), -1, 1, -10, 10);
   var n3 = map( sin(w[5]*frameCount + off[5]), -1, 1, -10, 10);
