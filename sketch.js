@@ -48,7 +48,7 @@ function draw()
   
   stroke(255, 120);
   fill(col, 20);
-  beginShape(POINTS);
+  beginShape(LINES);
   for (var i=0; i<numpoints; i++) {
     var long = lerp(-PI, PI, i/numpoints);
     var r1 = pow( (pow( abs(cos(m*long/4)/a), n2 ) +
