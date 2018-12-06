@@ -6,7 +6,7 @@ var off = [];
 
 function setup() 
 {
-  createCanvas(1200, 800, WEBGL);
+  createCanvas(1200, 800);
   smooth();
   strokeWeight(2);
   refresh();
@@ -26,7 +26,7 @@ function draw()
 {
  
   //background(50);
-  rotateX(millis() / 1000);
+  //rotateX(millis() / 1000);
   
   // update superformula parameters
   var a  = map( sin(w[0]*frameCount + off[0]), -1, 1, -1, 1);
