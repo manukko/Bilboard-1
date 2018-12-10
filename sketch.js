@@ -18,7 +18,7 @@ function refresh()
     w.push(random(0.001,0.02));
     off.push(random(10));
   }
-  col = color(random(50,255), random(50,255), random(50,255));
+  col = color(Math.random(50,255), Math.random(50,255), Math.random(50,255));
   alph = 0;
 }
 
